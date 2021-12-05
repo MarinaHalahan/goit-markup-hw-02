@@ -19,7 +19,7 @@ body {
   text-decoration: none;
   color: inherit;
 }
-h2 {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -55,26 +55,28 @@ h2 {
 
 /* ==============Navigation=========== */
 
-.nav {
+.site-nav-element {
+  color: var(--primary-title-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav {
-  color: var(--primary-title-color);
+
+.auth-nav-element {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-element:hover,
+.site-nav-element:focus {
   color: var(--accent-text-color);
 }
 
-.auth-nav {
-  color: var(--primary-text-color);
-  letter-spacing: 0.02em;
-}
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav-element:hover,
+.auth-nav-element:focus {
   color: var(--accent-text-color);
 }
 /* ======================End of Header=========== */
@@ -96,7 +98,6 @@ h2 {
 }
 .main-btn {
   background-color: var(--accent-text-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -110,7 +111,7 @@ h2 {
 /* =========End of Hero========= */
 /* ==========Features============ */
 
-.features-subtitle {
+.features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -133,7 +134,7 @@ h2 {
 .team {
   background-color: var(--secondary-bg-color);
 }
-.team-subtitle {
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -160,6 +161,7 @@ h2 {
 .footer .logo {
   color: var(--primary-white-color);
 }
+/*Стилизация тега address  */
 .contacts {
   font-style: normal;
   font-weight: 400;
